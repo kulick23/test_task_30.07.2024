@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивная верстка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="text-section">
+            <h1>Демо-версия</h1>
+            <p>За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить</p>
+            <button id="openModalBtn" class="button button-open">
+                Попробовать бесплатно
+                <span class="button-icon">
+                    <img src="arrow.svg" alt="Arrow Icon" class="icon">
+                </span>
+            </button>
+        </div>
+        <div class="image-section">
+            <img src="img.png" alt="Demo Image" class="responsive-image">
+        </div>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModalBtn" class="close-button">&times;</span>
+        <h2>Войти в систему</h2>
+        <form id="loginForm">
+            <input type="text" id="email" name="email" placeholder="Email / Телефон" required>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Запомнить меня</label>
+            </div>
+            <a href="#" class="help-link">Восстановить</a>
+            <button type="submit" class="button button-login">Войти</button>
+            <button type="button" class="button button-register">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
